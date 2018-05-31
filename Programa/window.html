@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- Librerias y hojas de codigo a utilizar -->
+        <link href="nouislider.min.css" rel="stylesheet">
+        <script src="jquery-2.1.4.min.js"></script>
+        <script src="underscore.js"></script>
+        <script src="backbone.js"></script>
+        <script src='Chart.js'></script>  
+        <script src="nouislider.js"></script>
+        <script src="wNumb.js"></script>
+        <script src="nerdamer/nerdamer.core.js"></script>
+        <script src="nerdamer/Calculus.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        
+        <aside id="side">
+        <!-- Barra lateral donde se ubican controles varios -->
+        <p> Canal 1 </p>
+        <input type="textbox" name="valorCanal1" disabled size="4">
+        <button size="2" id="f1"onclick="fx1()">f</button>
+        <input type="textbox" name="fCanal1" >
+        <p> Canal 2 </p>
+        <input type="textbox" name="valorCanal2" disabled size="4">
+        <button size="2" id="f2"onclick="fx2()">f</button>
+        <input type="textbox" name="fCanal2" >
+        <p> Canal 3 </p>
+        <input type="textbox" name="valorCanal3" disabled size="4">
+        <button size="2" id="f3"onclick="fx3()">f</button>
+        <input type="textbox" name="fCanal3" >
+        <p> Canal 4 </p>
+        <input type="textbox" name="valorCanal4" disabled size="4">
+        <button size="2" id="f4"onclick="fx4()">f</button>
+        <input type="textbox" name="fCanal4" >
+        <p> Canal 5 </p>
+        <input type="textbox" name="valorCanal5" disabled size="4">
+        <button size="2" id="f5"onclick="fx5()">f</button>
+        <input type="textbox" name="fCanal5" >
+        <p> Canal 6 </p>
+        <input type="textbox" name="valorCanal6" disabled size="4">
+        <button size="2" id="f6"onclick="fx6()">f</button>
+        <input type="textbox" name="fCanal6" >
+
+        <p> Contador </p>
+        <input type="textbox" name="contador" disabled>
+        <p> Milisegundos entre Muestras </p>
+        
+        <input type="textbox" id="input-format">
+        <div id="slider-format"></div>
+        <br>
+        <!-- Controles de conexion  -->
+        <div id="connection">
+            <table class="form">
+                <tbody>
+                    <tr>
+                        <th><label for="port">Port:</label></th>
+                        <td>
+                            <select id="port" name="port">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="bitrate">Bit Rate:</label></th>
+                        <td>
+                            <select id="bitrate" name="bitrate">
+                                <option value="9600">9600</option>
+                                <option value="19200">19200</option>
+                                <option value="38400">38400</option>
+                                <option value="57600" selected>57600</option>
+                                <option value="115200">115200</option>
+                            </select>
+                            baud
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <button id="connect">Connect</button>
+                            <button id="stop-connection">Stop</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </aside>
+        <!-- Area del grafico -->
+        <div id="main" style="height:600px; width: 75%"></div>
+        <!-- Carga de libreria grafica y de hojas de codigo  -->
+        <script src="echarts.js"></script>
+        <script src="graph.js"></script>
+        <script src="connection.js"></script>
+        <div>
+        <button id="stop"onclick="stopFunction()">Pause</button>
+        </div>
+        <script src="index.js"></script>
+
+<center>Grupo de Tecnología Educativa, PUCV</center>
+
+    </body>
+</html>

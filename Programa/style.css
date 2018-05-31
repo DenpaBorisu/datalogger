@@ -1,0 +1,45 @@
+/* Copyright (c) 2015, Amperka LLC
+ *
+ * This software may be modified and distributed under the terms
+ * of the MIT license.  See the LICENSE.txt file for details.
+ */
+
+body {
+    position: relative;
+}
+
+.popup {
+    float: right;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;popup
+    
+    background-color: white;
+    font-size: 15px;
+
+    border: 2px solid black;
+    border-radius: 0px;
+}
+
+
+#side {
+    float: right;
+}
+
+    #showcase {
+    margin: 0 20px;
+    text-align: center;
+}
+
+#slider-format {
+    width: 200px;
+    
+    margin: auto;
+    margin: 15px 0 0 0;
+}
+
+/*#input-format {
+    font-size: 20px;
+    width: 10%;*/
+#fCanal2 {
+    display: none;
